@@ -1,21 +1,18 @@
-﻿#include<iostream>
-using namespace std;
+﻿#include <iostream>
+
+using namespace  std;
 
 void main()
 {
-	setlocale(LC_ALL, "Rus");
-	int a, b;
-	cout << "Введите 2 числа: "; cin >> a; cin >> b;
-	cout << a << " " << b << endl;
+	setlocale(LC_ALL, "");
 
-	for (int i = 0; i < a; i++)
-	{
-		for (int i = 0; i < b; i++)
-		{
+	int a, b;
+	cout << "Введите два числа: ";
+	cin >> a >> b;
+	cout << endl;
 			a ^= b;
 			b ^= a;
 			a ^= b;
-		}
-	}
-	cout << a << " " << b;
+			cout << "Вывод: ";
+	cout << a << " " << b;
 }
